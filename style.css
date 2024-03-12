@@ -1,0 +1,120 @@
+ /* ORIGINAL TASK PUPILS STARTED WITH
+Full credit to code.org for task */
+
+/*The style for the body*/
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+  background-color: #b0a396;
+  margin: 0;
+  padding: 0;
+  color: #a5a278;
+}
+
+/* Main Container Styling */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background-color: #d6cca9;
+}
+
+/* Title Styling */
+h1 {
+  color: #6286a7;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 36px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+/* Introduction Styling */
+.intro {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #567299;
+  font-family: Lucida Console;
+}
+
+/* Pet Styling */
+.pet {
+  background-color: #95dfbf;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  margin-bottom: 60px;
+  transition: all 0.4s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #447e60;
+  text-align: center;
+  font-size: 18px;
+  position: relative;
+  overflow: hidden;
+  
+}
+
+.pet::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(circle, #fff 10%, transparent 40%);
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+
+.pet:hover::after {
+  opacity: 1;
+}
+
+.pet:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+
+
+/*The styling for the images of the pets */
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 300px; /* Added max-height */
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Pet Name Styling */
+h2 {
+  color: #44626a;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+/* Pet Type Styling */
+.type {
+  color: #44626a;
+  text-align: center;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+/* Pet Description Styling */
+.description {
+  color: #44626a;
+  text-align: center;
+  line-height: 1.5;
+  margin-top: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+hr{
+  border: 1px solid #4f6478;
+}
